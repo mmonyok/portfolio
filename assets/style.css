@@ -197,8 +197,8 @@ div[class*="cardImage"]:hover {
     -webkit-filter: grayscale(0);
 }
 
-#demo0 {
-    background-image: url(./images/bottledBeauty.jpg);
+#weatherDashboard {
+    background-image: url(./images/weatherDashboard.png);
     background-size: 400px 200px;
 }
 
