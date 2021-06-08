@@ -207,8 +207,8 @@ div[class*="cardImage"]:hover {
     background-size: 400px 200px;
 }
 
-#demo2 {
-    background-image: url(./images/reflectedDeception.jpg);
+#flickr {
+    background-image: url(./images/shottyDepth.jpg);
     background-size: 400px 200px;
 }
 
