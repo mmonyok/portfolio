@@ -202,8 +202,8 @@ div[class*="cardImage"]:hover {
     background-size: 400px 200px;
 }
 
-#demo1 {
-    background-image: url(./images/droplets.jpg);
+#dayPlanner {
+    background-image: url(./images/dayPlanner.png);
     background-size: 400px 200px;
 }
 
