@@ -1,0 +1,233 @@
+:root {
+    --background: rgb(124, 78, 81);
+    --border2: rgb(148, 152, 65);
+    --border: rgb(255, 255, 243);
+    --text: rgb(255, 255, 243);
+    --borderThickness: 3px;
+    --iconPadding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+div ul {
+    margin-left: 25px;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+header h1 {
+    padding: 25px;
+    width: 300px;
+    background: transparent url(Images/melodyIcon.jpg) center right no-repeat;
+    background-size: 55px;
+    background-position-x: 275px;
+}
+
+header img {
+    height: 75px;
+    width: 56px;
+}
+
+h2 {
+    margin: 0;
+    display: inline;
+    margin-left: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--borderThickness) solid var(--border);
+}
+
+li {
+    display: inline;
+}
+
+main {
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin-right: 25px;
+    padding-bottom: 5px;
+    border-bottom: var(--borderThickness) solid var(--border);
+}
+
+section {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+a[target*="blank"] {
+    margin: 25px;
+}
+
+/* Link Icons I will update these later.
+a[href*="github"] {
+    background: transparent url(https://github.com/favicon.ico) center right no-repeat;
+    padding-right: var(--iconPadding);
+}
+
+a[href*="linkedin"] {
+    background: transparent url(./Images/LI-In-Bug.png) center right no-repeat;
+    padding-right: var(--iconPadding);
+}
+
+.icon {
+    display: inline-block;
+    line-height: 35px;
+} */
+
+/*Main batch of Class Selectors*/
+.alignment {
+    border-right: var(--borderThickness) solid var(--border);
+}
+
+.card {
+    height: 200px;
+    width: 400px;
+    border: var(--borderThickness) solid var(--border);
+}
+
+.cardImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+
+.cardText {
+    border: var(--borderThickness) solid var(--border);
+    background-color: var(--background);
+    height: 50px;
+    width: 100px;
+    border-left: 0px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#mainCardText {
+    border: var(--borderThickness) solid var(--text);
+    line-height: 50px;
+    border-left: 0px;
+}
+
+.odyYok {
+    border: 1px solid;
+    margin: 2px;
+    padding: 2px;
+}
+
+.side {
+    border-right: var(--borderThickness) solid var(--border);
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    min-width: 150px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/*ID Selectors*/
+#allAboutMe {
+    margin-left: 25px;
+    max-width: 855px;
+}
+
+#backgroundImage {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url(./Images/shottyDepth.jpg);
+    border-bottom: var(--borderThickness) solid var(--border);
+}
+
+#contactMe {
+    line-height: 100px;
+    justify-content: flex-start;
+}
+
+#portfolioCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+}
+
+#subtitle {
+    margin: 15px;
+    margin-right: 0px;
+    border: var(--borderThickness) solid var(--border);
+    border-right: 0;
+    background-color: var(--background);
+    padding: 10px;
+}
+
+/* These are the card image IDs for the Portfolio section */
+#mainCard {
+    height: 400px;
+    width: 855px;
+    background-image: url(./Images/shottyDepth.jpg);
+    background-size: 855px 400px;
+}
+
+div[class*="cardImage"] {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div[class*="cardImage"]:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+#demo0 {
+    background-image: url(./Images/bottledBeauty.jpg);
+    background-size: 400px 200px;
+}
+
+#demo1 {
+    background-image: url(./Images/droplets.jpg);
+    background-size: 400px 200px;
+}
+
+#demo2 {
+    background-image: url(./Images/reflectedDeception.jpg);
+    background-size: 400px 200px;
+}
+
+#scratch {
+    background-image: url(./Images/mooseGoesHunting.jpg);
+    background-size: 400px 200px;
+}
+
+@media screen and (max-width: 675px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: var(--borderThickness) solid var(--border);
+    }
+}
+
