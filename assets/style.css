@@ -75,22 +75,6 @@ a[target*="blank"] {
     margin: 25px;
 }
 
-/* Link Icons I will update these later.
-a[href*="github"] {
-    background: transparent url(https://github.com/favicon.ico) center right no-repeat;
-    padding-right: var(--iconPadding);
-}
-
-a[href*="linkedin"] {
-    background: transparent url(./images/LI-In-Bug.png) center right no-repeat;
-    padding-right: var(--iconPadding);
-}
-
-.icon {
-    display: inline-block;
-    line-height: 35px;
-} */
-
 /*Main batch of Class Selectors*/
 .alignment {
     border-right: var(--borderThickness) solid var(--border);
@@ -142,12 +126,17 @@ a[href*="linkedin"] {
     text-align: center;
 }
 
-/*ID Selectors*/
-#allAboutMe {
-    margin-left: 25px;
-    max-width: 855px;
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for the banner image and text. */
 #backgroundImage {
     height: 200px;
     display: flex;
@@ -155,19 +144,6 @@ a[href*="linkedin"] {
     justify-content: flex-end;
     background-image: url(./images/shottyDepth.jpg);
     border-bottom: var(--borderThickness) solid var(--border);
-}
-
-#contactMe {
-    line-height: 100px;
-    justify-content: flex-start;
-}
-
-#portfolioCards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 1000px;
 }
 
 #subtitle {
@@ -179,12 +155,36 @@ a[href*="linkedin"] {
     padding: 10px;
 }
 
+/* Section Selectors */
+#aboutMe {
+
+}
+
+#allAboutMe {
+    margin-left: 25px;
+    max-width: 855px;
+}
+
+#portfolioCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+}
+
+#contactMe {
+    line-height: 100px;
+    justify-content: flex-start;
+}
+
 /* These are the card image IDs for the Portfolio section */
 #mainCard {
     height: 400px;
     width: 855px;
     background-image: url(./images/snaccidentalRecipe.png);
     background-size: 855px 400px;
+    flex: 0 1 auto;
 }
 
 div[class*="cardImage"] {
@@ -217,12 +217,28 @@ div[class*="cardImage"]:hover {
     background-size: 400px 200px;
 }
 
+/* Media Queries for Responsive design. */
 @media screen and (max-width: 675px) {
     header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border-bottom: var(--borderThickness) solid var(--border);
+    }
+
+    #aboutMe {
+        flex-direction: column;
+    }
+
+    .side {
+        border-bottom: var(--borderThickness) solid var(--border);
+        border-right: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-left: 0px;
     }
 }
 
