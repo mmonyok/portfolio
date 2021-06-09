@@ -29,7 +29,7 @@ h1 {
 header h1 {
     padding: 25px;
     width: 300px;
-    background: transparent url(Images/melodyIcon.jpg) center right no-repeat;
+    background: transparent url(../images/melodyIcon.jpg) center right no-repeat;
     background-size: 55px;
     background-position-x: 275px;
 }
@@ -142,7 +142,7 @@ a[target*="blank"] {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    background-image: url(./images/shottyDepth.jpg);
+    background-image: url(../images/shottyDepth.jpg);
     border-bottom: var(--borderThickness) solid var(--border);
 }
 
@@ -182,7 +182,7 @@ a[target*="blank"] {
 #mainCard {
     height: 400px;
     width: 855px;
-    background-image: url(./assets/images/snaccidentalRecipe.png);
+    background-image: url(../images/snaccidentalRecipe.png);
     background-size: 855px 400px;
     flex: 0 1 auto;
 }
@@ -198,22 +198,22 @@ div[class*="cardImage"]:hover {
 }
 
 #weatherDashboard {
-    background-image: url(./assets/images/weatherDashboard.png);
+    background-image: url(../images/weatherDashboard.png);
     background-size: 400px 200px;
 }
 
 #dayPlanner {
-    background-image: url(./assets/images/dayPlanner.png);
+    background-image: url(../images/dayPlanner.png);
     background-size: 400px 200px;
 }
 
 #flickr {
-    background-image: url(./assets/images/shottyDepth.jpg);
+    background-image: url(../images/shottyDepth.jpg);
     background-size: 400px 200px;
 }
 
 #scratch {
-    background-image: url(./assets/images/mooseGoesHunting.jpg);
+    background-image: url(../images/mooseGoesHunting.jpg);
     background-size: 400px 200px;
 }
 
