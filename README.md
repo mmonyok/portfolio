@@ -1,7 +1,7 @@
 # Portfolio
 - A central location to display and easily access all of my projects.
 
-[Live site!](https://github.com/mmonyok/portfolio)
+[Live site!](https://mmonyok.github.io/portfolio/)
 
 ## Project Description
 - Having a central location to highlight all of one's career accomplishments in a concise, aesthetically pleasing manner is key to networking and advancing throughout your career.
