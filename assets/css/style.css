@@ -153,10 +153,6 @@ a[target*="blank"] {
 }
 
 /* Section Selectors */
-#aboutMe {
-
-}
-
 #allAboutMe {
     margin-left: 25px;
     max-width: 855px;
@@ -168,6 +164,10 @@ a[target*="blank"] {
     flex-wrap: wrap;
     align-items: center;
     width: 1000px;
+}
+
+#repositories {
+    justify-content: center;
 }
 
 #contactMe {
@@ -211,11 +211,14 @@ div[class*="cardImage"]:hover {
 
 /* Media Queries for Responsive design. */
 @media screen and (max-width: 675px) {
-    header {
-        display: flex;
+    #header {
         flex-direction: column;
-        justify-content: space-between;
         border-bottom: var(--borderThickness) solid var(--border);
+    }
+
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #aboutMe {
@@ -230,6 +233,15 @@ div[class*="cardImage"]:hover {
         flex-direction: column;
         align-content: center;
         width: auto;
+    }
+
+    #contactMe {
+        flex-direction: column;
+        line-height: 100px;
+    }
+
+    #repositories {
+        flex-direction: column;
     }
 
     .side {
