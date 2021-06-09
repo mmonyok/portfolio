@@ -81,16 +81,13 @@ a[target*="blank"] {
 }
 
 .card {
-    height: 200px;
-    width: 400px;
-    border: var(--borderThickness) solid var(--border);
-}
-
-.cardImage {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-
+    background-size: 400px 200px;
+    height: 200px;
+    width: 400px;
+    border: var(--borderThickness) solid var(--border);
 }
 
 .cardText {
@@ -184,7 +181,6 @@ a[target*="blank"] {
     width: 855px;
     background-image: url(../images/snaccidentalRecipe.png);
     background-size: 855px 400px;
-    flex: 0 1 auto;
 }
 
 div[class*="cardImage"] {
@@ -199,22 +195,18 @@ div[class*="cardImage"]:hover {
 
 #weatherDashboard {
     background-image: url(../images/weatherDashboard.png);
-    background-size: 400px 200px;
 }
 
 #dayPlanner {
     background-image: url(../images/dayPlanner.png);
-    background-size: 400px 200px;
 }
 
 #flickr {
     background-image: url(../images/shottyDepth.jpg);
-    background-size: 400px 200px;
 }
 
 #scratch {
     background-image: url(../images/mooseGoesHunting.jpg);
-    background-size: 400px 200px;
 }
 
 /* Media Queries for Responsive design. */
@@ -230,11 +222,34 @@ div[class*="cardImage"]:hover {
         flex-direction: column;
     }
 
+    #portfolio {
+        flex-direction: column;
+    }
+
+    #portfolioCards {
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+    }
+
     .side {
         border-bottom: var(--borderThickness) solid var(--border);
         border-right: none;
         display: flex;
         justify-content: center;
+    }
+
+    .card {
+        height: 175px;
+        width: 350px;
+        background-size: 350px 175px;
+    }
+
+    #mainCard {
+        height: 175px;
+        width: 350px;
+        background-image: url(../images/snaccidentalRecipe.png);
+        background-size: 350px 175px;
     }
 
     h2 {
