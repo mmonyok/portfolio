@@ -107,7 +107,7 @@ section {
     justify-content: center;
 }
 
-#mainCardText {
+.mainCardText {
     border: var(--borderThickness) solid var(--text);
     border-left: 0px;
 }
@@ -195,7 +195,14 @@ section {
 }
 
 /* These are the card image IDs for the Portfolio section */
-#mainCard {
+#mainCard1 {
+  height: 400px;
+  width: 855px;
+  background-image: url(../images/manageMeNow.png);
+  background-size: 855px 400px;
+}
+
+#mainCard2 {
     height: 400px;
     width: 855px;
     background-image: url(../images/snaccidentalRecipe.png);
@@ -212,6 +219,14 @@ div[class*="cardImage"]:hover {
     -webkit-filter: grayscale(0);
 }
 
+#techBlog {
+    background-image: url(../images/techBlog.png);
+}
+
+#noteTaker {
+    background-image: url(../images/noteTaker.png);
+}
+
 #weatherDashboard {
     background-image: url(../images/weatherDashboard.png);
 }
@@ -220,13 +235,7 @@ div[class*="cardImage"]:hover {
     background-image: url(../images/dayPlanner.png);
 }
 
-#flickr {
-    background-image: url(../images/shottyDepth.jpg);
-}
 
-#scratch {
-    background-image: url(../images/mooseGoesHunting.jpg);
-}
 
 /* Media Queries for Responsive design. */
 @media screen and (max-width: 675px) {
@@ -285,7 +294,14 @@ div[class*="cardImage"]:hover {
         background-size: 350px 175px;
     }
 
-    #mainCard {
+    #mainCard1 {
+      height: 175px;
+      width: 350px;
+      background-image: url(../images/manageMeNow.png);
+      background-size: 350px 175px;
+  }
+
+    #mainCard2 {
         height: 175px;
         width: 350px;
         background-image: url(../images/snaccidentalRecipe.png);

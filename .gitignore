@@ -105,4 +105,7 @@ dist
 
 # Other
 .DS_Store
-db/
+
+# Test Portfolio
+updatedPortfolio/
+previousPortfolio/
